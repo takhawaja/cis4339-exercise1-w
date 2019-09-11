@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @super_villain.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @super_villain.description %>
+</p>
+
+<%= link_to 'Edit', edit_super_villain_path(@super_villain) %> |
+<%= link_to 'Back', super_villains_path %>

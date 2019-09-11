@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @minion.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @minion.description %>
+</p>
+
+<p>
+  <strong>Super villain:</strong>
+  <%= @minion.super_villain_id %>
+</p>
+
+<%= link_to 'Edit', edit_minion_path(@minion) %> |
+<%= link_to 'Back', minions_path %>

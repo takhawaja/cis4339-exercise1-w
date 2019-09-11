@@ -1,0 +1,2 @@
+class SuperVillain < ApplicationRecord
+end

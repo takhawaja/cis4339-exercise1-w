@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Minions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Super villain</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @minions.each do |minion| %>
+      <tr>
+        <td><%= minion.name %></td>
+        <td><%= minion.description %></td>
+        <td><%= minion.super_villain_id %></td>
+        <td><%= link_to 'Show', minion %></td>
+        <td><%= link_to 'Edit', edit_minion_path(minion) %></td>
+        <td><%= link_to 'Destroy', minion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Minion', new_minion_path %>
